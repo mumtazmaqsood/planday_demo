@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2022-10-11 15:37:45</p>
+                <p class='attribute'><strong>Duration: </strong>18.55 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 2, Pass: 2</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.LoginTest</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_a_login_page</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p><b> 1 & 2- Website opened & Cookies accepted </b><br>
+<b> 3- Verification of Login page elements </b><br>
+3.1 is_username displayed: True and enabled: True <br>
+3.2 is_password displayed: True and enabled: True <br>
+3.3 is_login_btn displayed: True and enabled: True <br>
+<b> 4- Invalid credentials -- Partially implemented--captcha implementation is not handled </b><br>
+cannot access elements<br>
+<b> 5- Verifying with valid credentials </b><br>
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_b_verify_employee_dashboard</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p><b> 5-Verify the URL contains /page/schedule </b><br>
+current url:https://test1234.planday.com/schedule <br>
+<b>https://test1234.planday.com/schedule is not containing '/page/schedule'</b><br>
+<b>6- Counting & assert Number of employees </b><br>
+swithced to iframe <br>
+<br> <b>Employee counts:3</b> <br>
+<b>1:EO
+Employee One
+8h 0m / 1 Shift
+Führungskräfte
+09:00 -17:00</b> <br>
+<b>2:ET
+Employee Two
+0h 0m / 0 Shifts</b> <br>
+<b>3:ET
+Employee Three
+0h 0m / 0 Shifts</b> <br>
+<br><b>7 & 8- Creating Shift for Employee One and checking it has been displayed </b><br>
+length of time gird:28 <br>
+Not found
+October 10, 2022 Open Shifts<br>
+Not found
+October 11, 2022 Open Shifts<br>
+Not found
+October 12, 2022 Open Shifts<br>
+Not found
+October 13, 2022 Open Shifts<br>
+Not found
+October 14, 2022 Open Shifts<br>
+Not found
+October 15, 2022 Open Shifts<br>
+Not found
+October 16, 2022 Open Shifts<br>
+Not found
+October 10, 2022 Employee One<br>
+<b>Found</b>
+<b>Verifying Shift has been created: October 11, 2022 Employee One</b><br>
+October 11, 2022 Employee One<br>
+Not found
+October 12, 2022 Employee One<br>
+Not found
+October 13, 2022 Employee One<br>
+Not found
+October 14, 2022 Employee One<br>
+Not found
+October 15, 2022 Employee One<br>
+Not found
+October 16, 2022 Employee One<br>
+Not found
+October 10, 2022 Employee Two<br>
+Not found
+October 11, 2022 Employee Two<br>
+Not found
+October 12, 2022 Employee Two<br>
+Not found
+October 13, 2022 Employee Two<br>
+Not found
+October 14, 2022 Employee Two<br>
+Not found
+October 15, 2022 Employee Two<br>
+Not found
+October 16, 2022 Employee Two<br>
+Not found
+October 10, 2022 Employee Three<br>
+Not found
+October 11, 2022 Employee Three<br>
+Not found
+October 12, 2022 Employee Three<br>
+Not found
+October 13, 2022 Employee Three<br>
+Not found
+October 14, 2022 Employee Three<br>
+Not found
+October 15, 2022 Employee Three<br>
+Not found
+October 16, 2022 Employee Three<br>
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 2, Pass: 2 -- Duration: 18.55 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
