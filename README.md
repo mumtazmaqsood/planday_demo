@@ -18,6 +18,12 @@
         download from here according to your chrome version
         https://chromedriver.chromium.org/downloads
 
+# Run Test cases 
+
+    Open command prompt --> project location and run command shown in img
+![image](https://user-images.githubusercontent.com/18198800/195124076-d118e7eb-62b4-4b4e-bc8a-91a69cf3b150.png)
+
+
 # Description
     Try to implement the POM (Page Object Model) but its basic structure
     of POM, locators, pages, test and reports are in different folder
