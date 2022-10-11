@@ -5,8 +5,8 @@
     --> for reporting --> used html reports 
 
 # How to execute 
-    1- **install python** 
-    2- **install selenium, html reports, unittest framework** 
+    1- install python 
+    2- install selenium, html reports, unittest framework 
         --> pip install selenium
         --> pip install html-testRunner
         --> pip install unittest
