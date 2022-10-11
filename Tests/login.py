@@ -4,6 +4,9 @@ import unittest
 import time
 import HtmlTestRunner
 
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+
 from Pages.login_page import LoginPage
 from Pages.employee_dashboard import EmployeeDashboard
 
@@ -13,8 +16,10 @@ class LoginTest(unittest.TestCase):
 #setupclass method run once, thats why website open once and
     @classmethod
     def setUpClass(cls):
-        path = "C:\\python310\\libs\\chromedriver.exe"
-        cls.driver = webdriver.Chrome(path)
+        # path = "C:\\python310\\libs\\chromedriver.exe"
+        # cls.driver = webdriver.Chrome(path)
+        #If chrome browser is not opened then comment the below line and un-comment the upper 2 lines 
+        cls.driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
         cls.driver.get("https://test1234.planday.com/")
         # cls.driver.maximize_window()
         cls.driver.implicitly_wait(5)

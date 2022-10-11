@@ -10,8 +10,10 @@ This solution is implemented by using
         --> pip install selenium
         --> pip install html-testRunner
         --> pip install unittest
+        --> pip install webdriver_manager 
     
-    3- **Download the chrome webdriver and put it in your PYTHON's libs folder**
+    3- **If chrome browser is not working after installing the above package then**
+        **Download the chrome webdriver and put it in your PYTHON's libs folder**
         fx "C:\\python310\\libs\\chromedriver.exe"
         download from here according to your chrome version
         https://chromedriver.chromium.org/downloads
