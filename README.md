@@ -35,5 +35,8 @@ This solution is implemented by using
 # What is not covered
     Invalid credentials -- Partially implemented--captcha implementation is not handled
 
+# Reports 
+![image](https://user-images.githubusercontent.com/18198800/195116775-b8c3b570-a996-4807-a969-04a223edd651.png)
+
 
 
