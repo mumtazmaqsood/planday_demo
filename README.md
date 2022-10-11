@@ -1,8 +1,8 @@
 # Planday_demo
-This solution is implemented by using 
---> Python
---> selenium + unittest framework
---> for reporting --> used html reports 
+    This solution is implemented by using 
+    --> Python
+    --> selenium + unittest framework
+    --> for reporting --> used html reports 
 
 # How to execute 
     1- **install python** 
@@ -19,8 +19,10 @@ This solution is implemented by using
 # Description
     Try to implement the POM (Page Object Model) but its basic structure
     of POM, locators, pages, test and reports are in different folder
-    There is possiblity to optimize and refactor the code but due to busy schedule I am just providing 
-    simple solution 
+    There is possiblity to optimize and refactor the code but due to busy schedule 
+    I am just providing the simple solution.
+    If got the time the try to resolve the captcha and refactor the code
+    **CONTACT ME. IF THERE IS PROBLEM IN CONFIGURATION**
 
 # Covered Areas 
     1- Open the website
